@@ -73,6 +73,9 @@ $(document).ready(function () {
                 toast.show();
                 $('.toast-body').text(response.message);
 
+                // updated last qty
+                $("#qty_stock").val(response.updated_qty);
+
                 // convert Ymd to dmY
                 let date_parts = transaction_date.split('-');
                 let formatted_date = date_parts[2] + '-' + date_parts[1] + '-' + date_parts[0];

@@ -264,7 +264,7 @@ class ItemController extends Controller
 
             $validated = Validator::make($request->all(), [
                 'transaction_date'  => 'required|date',
-                'transaction_no'    => 'required|unique:stock_movements',
+                'transaction_no'    => 'required',
                 'transaction_type'  => 'required',
                 'item_id'           => 'required',
                 'qty_stock'         => 'required|numeric',
@@ -337,9 +337,10 @@ class ItemController extends Controller
             }
 
             return response()->json([
-                'success'   => $success,
-                'message'   => $message,
-                'item'      => $item->item_code . ' ' . $item->item_name,
+                'success'       => $success,
+                'message'       => $message,
+                'updated_qty'   => $qty,
+                'item'          => $item->item_code . ' ' . $item->item_name,
             ], $status);
         }catch(Exception $err){
             return response()->json($err->getMessage(), 500);
