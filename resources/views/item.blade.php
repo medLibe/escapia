@@ -113,7 +113,7 @@
                                 <div class="form-group mb-3">
                                     <label for="item_code" class="form-label">Item Code</label>
                                     <input type="text" class="form-control" placeholder="Item Code"
-                                        value="{{ $item_code }}" readonly
+                                        value="{{ $i->item_code }}" readonly
                                         style="background-color: #eeefef; color: #06063c;">
                                 </div>
                                 <div class="form-group mb-3">
