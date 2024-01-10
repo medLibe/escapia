@@ -23,6 +23,38 @@ $(document).ready(function() {
                     xhr.setRequestHeader('Authorization', 'Bearer ' + credential_token);
                 }
             },
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'copy',
+                    text: '<i class="fa-solid fa-copy"></i> Copy',
+                    className: 'btn btn-secondary me-1'
+                },
+                {
+                    extend: 'excel',
+                    title: 'Report Stock Movement',
+                    text: '<i class="fa-solid fa-file-excel"></i> Excel',
+                    className: 'btn btn-success me-1',
+                },
+                {
+                    extend: 'print',
+                    text: '<i class="fa-solid fa-file-export"></i> Print',
+                    className: 'btn btn-danger me-1',
+                    title: 'Report Stock Movement',
+                    customize: function(win) {
+                        $(win.document.body).find('h1').text('Report Stock Movement');
+                        $(win.document.body).css('font-size', '14px');
+                    },
+                },
+                {
+                    extend: 'pdf',
+                    text: '<i class="fa-solid fa-print"></i> PDF',
+                    className: 'btn btn-light',
+                    title: 'Report Stock Movement',
+                },
+            ],
+            lengthMenu: [10, 25, 50, 100],
+            pageLength: 25,
             columns: [
                 {data: 'item_code', name: 'item_code'},
                 {data: 'item_name', name: 'item_name'},
@@ -79,6 +111,38 @@ $(document).ready(function() {
                             xhr.setRequestHeader('Authorization', 'Bearer ' + credential_token);
                         }
                     },
+                    dom: 'Bfrtip',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            text: '<i class="fa-solid fa-copy"></i> Copy',
+                            className: 'btn btn-secondary me-1'
+                        },
+                        {
+                            extend: 'excel',
+                            title: 'Report Stock Movement',
+                            text: '<i class="fa-solid fa-file-excel"></i> Excel',
+                            className: 'btn btn-success me-1',
+                        },
+                        {
+                            extend: 'print',
+                            text: '<i class="fa-solid fa-file-export"></i> Print',
+                            className: 'btn btn-danger me-1',
+                            title: 'Report Stock Movement',
+                            customize: function(win) {
+                                $(win.document.body).find('h1').text('Report Stock Movement');
+                                $(win.document.body).css('font-size', '14px');
+                            },
+                        },
+                        {
+                            extend: 'pdf',
+                            text: '<i class="fa-solid fa-print"></i> PDF',
+                            className: 'btn btn-light',
+                            title: 'Report Stock Movement',
+                        },
+                    ],
+                    lengthMenu: [10, 25, 50, 100],
+                    pageLength: 25,
                     columns: [
                         {data: 'item_code', name: 'item_code'},
                         {data: 'item_name', name: 'item_name'},
@@ -156,6 +220,38 @@ $(document).ready(function() {
                             xhr.setRequestHeader('Authorization', 'Bearer ' + credential_token);
                         }
                     },
+                    dom: 'Bfrtip',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            text: '<i class="fa-solid fa-copy"></i> Copy',
+                            className: 'btn btn-secondary me-1'
+                        },
+                        {
+                            extend: 'excel',
+                            title: 'Report Stock Movement',
+                            text: '<i class="fa-solid fa-file-excel"></i> Excel',
+                            className: 'btn btn-success me-1',
+                        },
+                        {
+                            extend: 'print',
+                            text: '<i class="fa-solid fa-file-export"></i> Print',
+                            className: 'btn btn-danger me-1',
+                            title: 'Report Stock Movement',
+                            customize: function(win) {
+                                $(win.document.body).find('h1').text('Report Stock Movement');
+                                $(win.document.body).css('font-size', '14px');
+                            },
+                        },
+                        {
+                            extend: 'pdf',
+                            text: '<i class="fa-solid fa-print"></i> PDF',
+                            className: 'btn btn-light',
+                            title: 'Report Stock Movement',
+                        },
+                    ],
+                    lengthMenu: [10, 25, 50, 100],
+                    pageLength: 25,
                     columns: [
                         { data: 'item_code', name: 'item_code' },
                         { data: 'item_name', name: 'item_name' },
@@ -257,6 +353,38 @@ $(document).ready(function() {
                             xhr.setRequestHeader('Authorization', 'Bearer ' + credential_token);
                         }
                     },
+                    dom: 'Bfrtip',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            text: '<i class="fa-solid fa-copy"></i> Copy',
+                            className: 'btn btn-secondary me-1'
+                        },
+                        {
+                            extend: 'excel',
+                            title: 'Report Stock Movement',
+                            text: '<i class="fa-solid fa-file-excel"></i> Excel',
+                            className: 'btn btn-success me-1',
+                        },
+                        {
+                            extend: 'print',
+                            text: '<i class="fa-solid fa-file-export"></i> Print',
+                            className: 'btn btn-danger me-1',
+                            title: 'Report Stock Movement',
+                            customize: function(win) {
+                                $(win.document.body).find('h1').text('Report Stock Movement');
+                                $(win.document.body).css('font-size', '14px');
+                            },
+                        },
+                        {
+                            extend: 'pdf',
+                            text: '<i class="fa-solid fa-print"></i> PDF',
+                            className: 'btn btn-light',
+                            title: 'Report Stock Movement',
+                        },
+                    ],
+                    lengthMenu: [10, 25, 50, 100],
+                    pageLength: 25,
                     columns: [
                         {data: 'item_code', name: 'item_code'},
                         {data: 'item_name', name: 'item_name'},
@@ -321,6 +449,38 @@ $(document).ready(function() {
                             xhr.setRequestHeader('Authorization', 'Bearer ' + credential_token);
                         }
                     },
+                    dom: 'Bfrtip',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            text: '<i class="fa-solid fa-copy"></i> Copy',
+                            className: 'btn btn-secondary me-1'
+                        },
+                        {
+                            extend: 'excel',
+                            title: 'Report Stock Movement',
+                            text: '<i class="fa-solid fa-file-excel"></i> Excel',
+                            className: 'btn btn-success me-1',
+                        },
+                        {
+                            extend: 'print',
+                            text: '<i class="fa-solid fa-file-export"></i> Print',
+                            className: 'btn btn-danger me-1',
+                            title: 'Report Stock Movement',
+                            customize: function(win) {
+                                $(win.document.body).find('h1').text('Report Stock Movement');
+                                $(win.document.body).css('font-size', '14px');
+                            },
+                        },
+                        {
+                            extend: 'pdf',
+                            text: '<i class="fa-solid fa-print"></i> PDF',
+                            className: 'btn btn-light',
+                            title: 'Report Stock Movement',
+                        },
+                    ],
+                    lengthMenu: [10, 25, 50, 100],
+                    pageLength: 25,
                     columns: [
                         {data: 'item_code', name: 'item_code'},
                         {data: 'item_name', name: 'item_name'},
